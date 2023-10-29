@@ -76,6 +76,8 @@ namespace calculator
                 // If user will put capital letter
             } while (Console.ReadLine().ToUpper() == "Y");
 
+
+
             //in case they would like to exit calculator 4
             Console.WriteLine("Bye!");
             Console.ReadKey();
