@@ -20,6 +20,13 @@ namespace calculator
                     Console.WriteLine("Invalid input. Please enter an integer");
                     Console.Write("Enter number 1: ");
                 }
+                Console.WriteLine("Enter an option:");
+                Console.WriteLine("\t+ : Add");
+                Console.WriteLine("\t- : Subtrack");
+                Console.WriteLine("\t* : Multiply");
+                Console.WriteLine("\t/ : Divide");
+                Console.WriteLine("Enter an option:");
+                string function = Console.ReadLine();
 
                 Console.Write("Enter number 2: ");
                 while (!int.TryParse(Console.ReadLine(), out num2))
@@ -27,15 +34,8 @@ namespace calculator
                     Console.WriteLine("Invalid input. Please enter an integer.");
                     Console.Write("Enter number 2:");
                 }
-                Console.WriteLine("Enter an option:");
-                Console.WriteLine("\t+ : Add");
-                Console.WriteLine("\t- : Subtrack");
-                Console.WriteLine("\t* : Multiply");
-                Console.WriteLine("\t/ : Divide");
-                Console.Write("Enter an option");
 
-
-                switch (Console.ReadLine())
+                switch (function)
                 {
                     case "+":
                         result = num1 + num2;
@@ -76,9 +76,10 @@ namespace calculator
                 // If user will put capital letter
             } while (Console.ReadLine().ToUpper() == "Y");
 
+
+
             //in case they would like to exit calculator 4
             Console.WriteLine("Bye!");
-            Console.ReadKey();
 
         }
     }
