@@ -80,7 +80,6 @@ namespace calculator
 
             //in case they would like to exit calculator 4
             Console.WriteLine("Bye!");
-            Console.ReadKey();
 
         }
     }
